@@ -1,8 +1,8 @@
-import React from "react";
+import Index from "./pages/index";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return <Index></Index>;
 }
 
 export default App;

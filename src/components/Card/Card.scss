@@ -1,0 +1,31 @@
+.cardBox {
+  width: 50%;
+  background-color: #ebeef9;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  margin-left: 160px;
+  overflow: hidden;
+  .cardTitle {
+    margin-left: 40px;
+    width: 80%;
+    font-size: clamp(28px, 2.77778vw, 40px);
+    line-height: 120%;
+  }
+  .cardDetail {
+    display: flex;
+    .cardTag {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .cardDate {
+      margin-top: 20px;
+      margin-left: 40px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  .cardImg {
+    width: 100%;
+  }
+}
