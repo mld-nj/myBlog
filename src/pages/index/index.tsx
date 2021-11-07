@@ -21,6 +21,7 @@ const Index = () => {
             key={value["id"]}
             tag={value["tag"]}
             type={value["type"]}
+            detail={value["detail"]}
           ></Card>
         );
       })}

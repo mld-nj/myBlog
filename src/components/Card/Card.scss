@@ -1,11 +1,13 @@
 .cardBox {
   width: 50%;
+  height: 200px;
   background-color: #ebeef9;
   margin-bottom: 40px;
   padding-top: 40px;
   padding-bottom: 80px;
   margin-left: 160px;
   overflow: hidden;
+  border-radius: 8px;
   .cardTitle {
     margin-left: 40px;
     width: 80%;
@@ -19,12 +21,26 @@
       margin-left: 20px;
     }
     .cardDate {
+      width: 100px;
       margin-top: 20px;
       margin-left: 40px;
       height: 30px;
       line-height: 30px;
     }
+    .cardMes {
+      margin-top: 20px;
+      margin-left: 40px;
+      width: 400px;
+      //   height: 90px;
+      word-break: break-all;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; /* 这里是超出几行省略 */
+      overflow: hidden;
+    }
   }
+
   .cardImg {
     width: 100%;
   }

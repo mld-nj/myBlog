@@ -11,7 +11,7 @@ const Tag = (props: { tag: string; type: number }) => {
     <div
       className="tagBox"
       style={{
-        backgroundColor: tagColor[props.type],
+        backgroundColor: tagColor[props.type] || tagColor[1],
       }}
     >
       <div className="tagMes">{tag}</div>
