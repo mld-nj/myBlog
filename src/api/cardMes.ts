@@ -6,3 +6,13 @@ const request = axios.create({
 export const getCardDetails = () => {
   return request.get("/cardDetail");
 };
+export const getTags = () => {
+  return request.get("/tags");
+};
+export const getPassage = (id: any) => {
+  return request.get("/blog", {
+    params: {
+      id: id,
+    },
+  });
+};

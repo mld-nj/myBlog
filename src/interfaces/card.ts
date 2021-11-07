@@ -5,4 +5,5 @@ export interface cardMes {
   tag: string;
   type: number;
   detail: string;
+  id: number;
 }
