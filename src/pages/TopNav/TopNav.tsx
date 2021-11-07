@@ -1,4 +1,9 @@
 const TopNav = () => {
-  return <div>ppppp</div>;
+  return (
+    <div className="navBox">
+      <div className="leftNav"></div>
+      <div className="rightNav"></div>
+    </div>
+  );
 };
 export default TopNav;
