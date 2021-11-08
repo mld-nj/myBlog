@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { getPassage } from "../../api/cardMes";
-import MdEditor from "react-markdown-editor-lite";
+import "github-markdown-css/github-markdown.css";
 import MarkdownIt from "markdown-it";
 import "./ShowMd.scss";
 const ShowMd = (props) => {
@@ -20,7 +20,7 @@ const ShowMd = (props) => {
     <div style={{ height: "500px" }}>
       {/* <div value={passage} renderHTML={(text) => mdParse.render(text)} /> */}
       <div
-        className="showHtml"
+        className="showHtml markdown-body"
         dangerouslySetInnerHTML={{ __html: htmlPas }}
       ></div>
     </div>
