@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 // import { markdown } from "markdown";
 import Tag from "../Tag/Tag";
 import { cardMes } from "../../interfaces/card";
-import { getPassage } from "../../api/cardMes";
+import { Link } from "react-router-dom";
 import bg from "../../assets/orb-blue.svg";
 import "./Card.scss";
 const Card = (props: cardMes) => {
@@ -10,18 +10,13 @@ const Card = (props: cardMes) => {
   const [cardStyle, setCardStyle] = useState("none");
   const [blog, setBlog] = useState("");
   const dateSlice = date.slice(0, 10);
-  const getBlog = useCallback(() => {
-    console.log(props.id);
-    getPassage(props.id).then((res) => {
-      setBlog(res.data);
-      console.log(res.data);
-    });
-  }, []);
+  const showPassage = useCallback(() => {}, []);
   useEffect(() => {
     console.log(blog);
   }, [blog]);
   return (
-    <div
+    <Link
+      to={`/passage/${props.id}`}
       className="cardBox"
       onMouseEnter={() => {
         setCardStyle("0px 0px 50px #cccccc");
@@ -31,7 +26,7 @@ const Card = (props: cardMes) => {
         setCardStyle("none");
       }}
       style={{ boxShadow: cardStyle }}
-      onClick={getBlog}
+      onClick={showPassage}
     >
       <div className="cardTitle">{title}</div>
       <div className="cardDetail">
@@ -50,7 +45,7 @@ const Card = (props: cardMes) => {
       >
         <img src={bg} alt="" />
       </div>
-    </div>
+    </Link>
   );
 };
 export default Card;
