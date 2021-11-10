@@ -7,7 +7,7 @@ import bg from "../../assets/orb-blue.svg";
 import "./Card.scss";
 const Card = (props: cardMes) => {
   const { date, title, detail } = props;
-  const [cardStyle, setCardStyle] = useState("none");
+  const [cardStyle, setCardStyle] = useState("0px 0px 10px #cccccc");
   const [blog, setBlog] = useState("");
   const dateSlice = date.slice(0, 10);
   const showPassage = useCallback(() => {}, []);
@@ -23,7 +23,7 @@ const Card = (props: cardMes) => {
       }}
       onMouseMove={() => {}}
       onMouseLeave={() => {
-        setCardStyle("none");
+        setCardStyle("0px 0px 10px #cccccc");
       }}
       style={{ boxShadow: cardStyle }}
       onClick={showPassage}

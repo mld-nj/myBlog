@@ -1,0 +1,82 @@
+.userCardBox {
+  position: absolute;
+  top: 0px;
+  right: 15%;
+  // float: right;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1fc8db;
+  background-image: linear-gradient(
+    141deg,
+    #9fb8ad 0%,
+    #1fc8db 51%,
+    #2cb5e8 75%
+  );
+  border-radius: 10px;
+  .pic {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .picBox {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-image: url("../../assets/photo.jpg");
+      background-size: 100%, 100%;
+      transition: all 0.8s ease;
+    }
+    .picBox:hover {
+      transform: rotate(360deg);
+    }
+  }
+  .name {
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+    font-family: Microsoft YaHei;
+  }
+  .blogInfo {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    padding: 10px;
+    color: white;
+    font-family: Microsoft YaHei;
+    justify-content: space-between;
+    .passages {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      font-size: 24px;
+      font-weight: bold;
+      .title {
+        text-align: center;
+      }
+      .counts {
+        text-align: center;
+      }
+    }
+    .tags {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      font-size: 24px;
+      font-weight: bold;
+      .title {
+        text-align: center;
+      }
+      .counts {
+        text-align: center;
+      }
+    }
+  }
+}

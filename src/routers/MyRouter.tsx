@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { Router } from "react-router";
-import Index from "../pages/index/index";
+import Index from "../pages/Index/index";
 import Passage from "../pages/Passage/Passage";
 const MyRouter = () => {
   return (

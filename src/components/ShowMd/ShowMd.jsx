@@ -8,6 +8,7 @@ import "./ShowMd.scss";
 const ShowMd = (props) => {
   const [passage, setPassage] = useState("");
   const [htmlPas, setHtmlPas] = useState("");
+  const [cardStyle, setCardStyle] = useState("none");
   const mdParser = new MarkdownIt({
     // 设置代码高亮的配置
     highlight: function (code, language) {
@@ -38,11 +39,20 @@ const ShowMd = (props) => {
   }, [passage]);
 
   return (
-    <div style={{ height: "500px" }}>
+    <div
+      onMouseEnter={() => {
+        setCardStyle("0px 0px 50px #cccccc");
+      }}
+      onMouseMove={() => {}}
+      onMouseLeave={() => {
+        setCardStyle("none");
+      }}
+    >
       {/* <div value={passage} renderHTML={(text) => mdParse.render(text)} /> */}
       <div
         className="showHtml markdown-body"
         dangerouslySetInnerHTML={{ __html: htmlPas }}
+        style={{ boxShadow: cardStyle }}
       ></div>
     </div>
   );

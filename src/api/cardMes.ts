@@ -16,3 +16,9 @@ export const getPassage = (id: any) => {
     },
   });
 };
+export const getPassageCounts = () => {
+  return request.get("/passageCounts");
+};
+export const getKindCounts = () => {
+  return request.get("/tagKinds");
+};

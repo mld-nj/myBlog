@@ -1,4 +1,4 @@
-import Index from "./pages/index";
+import Index from "./pages/Index/index";
 import MyRouter from "./routers/MyRouter";
 import "./App.scss";
 
