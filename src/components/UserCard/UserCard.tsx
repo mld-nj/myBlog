@@ -44,7 +44,7 @@ const UserCard = () => {
           <div className="counts">{pageNum.kind}</div>
         </div>
       </div>
-      <a href="https://github.com/mld-nj" className="contact">
+      <a href="https://github.com/mld-nj" target="_blank" className="contact">
         <div className="icon"></div>
         <div className="content">Contact me</div>
       </a>
