@@ -23,17 +23,23 @@ const TagList = () => {
     }
   }
   return (
-    <div className="tagsListBox">
-      {tags.map((value: any) => {
-        return (
-          <Tag
-            tag={value.tagName}
-            type={value.type}
-            width={randomNum(65, 95)}
-            height={randomNum(30, 45)}
-          ></Tag>
-        );
-      })}
+    <div className="tagsListContainer">
+      <div className="title">
+        <div className="icon"></div>
+        <div className="content">Tags</div>
+      </div>
+      <div className="tagsListBox">
+        {tags.map((value: any) => {
+          return (
+            <Tag
+              tag={value.tagName}
+              type={value.type}
+              width={randomNum(65, 95)}
+              height={randomNum(30, 45)}
+            ></Tag>
+          );
+        })}
+      </div>
     </div>
   );
 };
