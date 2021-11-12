@@ -31,7 +31,7 @@ const Card = (props: cardMes) => {
       <div className="cardDetail">
         <div className="cardDate">{dateSlice}</div>
         <div className="cardTag">
-          <Tag tag={props.tag} type={props.type} width={80}></Tag>
+          <Tag tag={props.tag} type={props.type} width={80} height={30}></Tag>
         </div>
         <div className="cardMes">{detail}</div>
       </div>

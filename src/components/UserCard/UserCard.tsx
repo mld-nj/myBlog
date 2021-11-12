@@ -44,10 +44,10 @@ const UserCard = () => {
           <div className="counts">{pageNum.kind}</div>
         </div>
       </div>
-      <div className="contact">
+      <a href="https://github.com/mld-nj" className="contact">
         <div className="icon"></div>
         <div className="content">Contact me</div>
-      </div>
+      </a>
     </div>
   );
 };

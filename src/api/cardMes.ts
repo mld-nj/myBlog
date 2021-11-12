@@ -22,3 +22,7 @@ export const getPassageCounts = () => {
 export const getKindCounts = () => {
   return request.get("/tagKinds");
 };
+//获取所有文章的不同tag
+export const getAllTag = () => {
+  return request.get("/tagName");
+};
