@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import "./Tag.scss";
-const Tag = (props: { tag: string; type: number }) => {
+const Tag = (props: { tag: string; type: number; width: number }) => {
   const { tag } = props;
   const tagColor = {
     1: "#0099FF",
@@ -11,6 +11,7 @@ const Tag = (props: { tag: string; type: number }) => {
     <div
       className="tagBox"
       style={{
+        width: `${props.width}px`,
         backgroundColor: tagColor[props.type] || tagColor[1],
       }}
     >

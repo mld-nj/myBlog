@@ -10,7 +10,7 @@ const Card = (props: cardMes) => {
   const [cardStyle, setCardStyle] = useState("0px 0px 10px #cccccc");
   const [blog, setBlog] = useState("");
   const dateSlice = date.slice(0, 10);
-  const showPassage = useCallback(() => {}, []);
+
   useEffect(() => {
     console.log(blog);
   }, [blog]);
@@ -26,13 +26,12 @@ const Card = (props: cardMes) => {
         setCardStyle("0px 0px 10px #cccccc");
       }}
       style={{ boxShadow: cardStyle }}
-      onClick={showPassage}
     >
       <div className="cardTitle">{title}</div>
       <div className="cardDetail">
         <div className="cardDate">{dateSlice}</div>
         <div className="cardTag">
-          <Tag tag={props.tag} type={props.type}></Tag>
+          <Tag tag={props.tag} type={props.type} width={80}></Tag>
         </div>
         <div className="cardMes">{detail}</div>
       </div>
