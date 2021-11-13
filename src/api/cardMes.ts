@@ -27,7 +27,7 @@ export const getAllTag = () => {
   return request.get("/tagName");
 };
 //获取每个标签对应的文章
-export const getTagPas = (tagName: string) => {
+export const getTagPas = (tagName: any) => {
   return request.get("/tagPas", {
     params: {
       tagName,

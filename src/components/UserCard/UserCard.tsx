@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { getPassageCounts, getKindCounts } from "../../api/cardMes";
 import "./UserCard.scss";
 const UserCard = () => {
@@ -14,11 +15,6 @@ const UserCard = () => {
       });
     });
   }, []);
-  // useEffect(() => {
-  //   getKindCounts().then((res) => {
-  //     setPageNum({ ...pageNum, kind: JSON.parse(res.data).total });
-  //   });
-  // }, [pageNum.passgae]);
   return (
     <div
       className="userCardBox"
@@ -30,9 +26,9 @@ const UserCard = () => {
       }}
       style={{ boxShadow: cardStyle }}
     >
-      <div className="pic">
+      <Link to={"/"} className="pic">
         <div className="picBox"></div>
-      </div>
+      </Link>
       <div className="name">前端小孟</div>
       <div className="blogInfo">
         <div className="passages">
