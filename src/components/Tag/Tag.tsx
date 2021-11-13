@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Tag.scss";
 const Tag = (props: {
   tag: string;
@@ -13,7 +14,8 @@ const Tag = (props: {
     3: "#00CCFF",
   };
   return (
-    <div
+    <Link
+      to={`/tagPas/${tag}`}
       className="tagBox"
       style={{
         width: `${props.width}px`,
@@ -23,7 +25,7 @@ const Tag = (props: {
       }}
     >
       <div className="tagMes">{tag}</div>
-    </div>
+    </Link>
   );
 };
 export default Tag;
