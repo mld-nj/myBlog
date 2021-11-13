@@ -1,0 +1,29 @@
+.paginateContainer {
+  display: flex;
+  width: 50%;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 240px;
+  .leftContainer {
+    width: 40px;
+    height: 40px;
+    background-image: url("../../assets/left.png");
+    background-size: 100%, 100%;
+  }
+  .middleContainer {
+    display: flex;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0083fe;
+  }
+  .rightContainer {
+    width: 40px;
+    height: 40px;
+    background-image: url("../../assets/right.png");
+    background-size: 100%, 100%;
+  }
+}

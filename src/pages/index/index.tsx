@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "../../components/Card/Card";
 import UserCard from "../../components/UserCard/UserCard";
 import TagList from "../../components/TagsList/TagsList";
+import Paginate from "../../components/Paginate/Paginate";
 import { getCardDetails } from "../../api/cardMes";
 const Index = () => {
   const [cardList, setCardList] = useState([]);
@@ -32,6 +33,7 @@ const Index = () => {
       </div>
       <UserCard></UserCard>
       <TagList></TagList>
+      <Paginate></Paginate>
     </div>
   );
 };

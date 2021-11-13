@@ -34,3 +34,12 @@ export const getTagPas = (tagName: any) => {
     },
   });
 };
+//分页获取文章
+export const getPagniatePas = (page: number, pageSize: number) => {
+  return request.get("/pCardDetail", {
+    params: {
+      page,
+      pageSize,
+    },
+  });
+};

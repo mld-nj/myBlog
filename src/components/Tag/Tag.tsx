@@ -12,6 +12,8 @@ const Tag = (props: {
     1: "#0099FF",
     2: "#0066FF",
     3: "#00CCFF",
+    4: "#99FFFF",
+    5: "#99CCFF",
   };
   return (
     <Link
