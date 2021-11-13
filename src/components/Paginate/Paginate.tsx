@@ -1,23 +1,15 @@
 import { useState, useEffect } from "react";
+import { useRecoilState } from "recoil";
 import { getPassageCounts } from "../../api/cardMes";
-import { getPagniatePas } from "../../api/cardMes";
+import { pageConfigStore } from "../../store/paginate";
 import "./Paginate.scss";
 const Paginate = () => {
-  const [paginateConfig, setPaginateConfig] = useState({
-    page: 1,
-    pageSize: 4,
-  });
-  const [pageConfig, setPageConfig] = useState({
-    currentPage: 1,
-    totalPage: 3,
-  });
+  const [pageConfig, setPageConfig] = useRecoilState(pageConfigStore);
   useEffect(() => {
     getPassageCounts().then((res) => {
       setPageConfig({
         ...pageConfig,
-        totalPage: Math.ceil(
-          (JSON.parse(res.data).sum / paginateConfig.pageSize) * 1
-        ),
+        totalPage: Math.ceil((JSON.parse(res.data).sum / 4) * 1),
       });
     });
   }, []);
