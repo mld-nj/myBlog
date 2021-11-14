@@ -3,6 +3,7 @@ import Card from "../../components/Card/Card";
 import UserCard from "../../components/UserCard/UserCard";
 import TagList from "../../components/TagsList/TagsList";
 import Paginate from "../../components/Paginate/Paginate";
+import TimeAxis from "../../components/TimeAxis/TimeAxis";
 import { useRecoilState } from "recoil";
 import { pageConfigStore } from "../../store/paginate";
 import { getCardDetails, getPagniatePas } from "../../api/cardMes";
@@ -40,6 +41,7 @@ const Index = () => {
       <UserCard></UserCard>
       <TagList></TagList>
       <Paginate></Paginate>
+      <TimeAxis></TimeAxis>
     </div>
   );
 };

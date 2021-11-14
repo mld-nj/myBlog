@@ -1,0 +1,62 @@
+.timeAxisContainer {
+  width: 50%;
+  margin-left: 240px;
+  .pasNodeContainer {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    .nodeItemContainer {
+      position: relative;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      transition: all 0.4s ease;
+      .time {
+        font-weight: bold;
+        color: rgba(27, 205, 252);
+      }
+      .circle {
+        position: absolute;
+        left: -11px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(27, 205, 252, 0.5);
+      }
+      .divide {
+        width: 10px;
+      }
+      .title {
+        // float: left;
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+        color: rgba(27, 205, 252);
+      }
+    }
+    .nodeItemContainer::after {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      background: rgba(27, 205, 252, 0.5);
+      width: 2px;
+      height: 10px;
+      top: 0px;
+      left: -7px;
+    }
+    .nodeItemContainer::before {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      background: rgba(27, 205, 252, 0.5);
+      width: 2px;
+      height: 10px;
+      left: -7px;
+      top: 28px;
+    }
+    .nodeItemContainer:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
