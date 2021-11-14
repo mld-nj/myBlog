@@ -12,6 +12,13 @@
       align-items: center;
       padding: 10px;
       transition: all 0.4s ease;
+      border-radius: 5px;
+      .icon {
+        width: 20px;
+        height: 20px;
+        background-image: url("../../assets/calendar.png");
+        background-size: 100%, 100%;
+      }
       .time {
         font-weight: bold;
         color: rgba(27, 205, 252);
