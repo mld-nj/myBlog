@@ -4,9 +4,11 @@ import UserCard from "../../components/UserCard/UserCard";
 import TagList from "../../components/TagsList/TagsList";
 import Paginate from "../../components/Paginate/Paginate";
 import TimeAxis from "../../components/TimeAxis/TimeAxis";
+import ArchiveCard from "../../components/ArchiveCard/ArchiveCard";
 import { useRecoilState } from "recoil";
 import { pageConfigStore } from "../../store/paginate";
 import { getCardDetails, getPagniatePas } from "../../api/cardMes";
+import "./index.scss";
 const Index = () => {
   const [cardList, setCardList] = useState([]);
   const [pageConfig, setPageConfig] = useRecoilState(pageConfigStore);
@@ -38,8 +40,12 @@ const Index = () => {
           );
         })}
       </div>
-      <UserCard></UserCard>
-      <TagList></TagList>
+      <div className="leftBox">
+        <UserCard></UserCard>
+        <TagList></TagList>
+        <ArchiveCard></ArchiveCard>
+      </div>
+
       <Paginate></Paginate>
       <TimeAxis></TimeAxis>
     </div>

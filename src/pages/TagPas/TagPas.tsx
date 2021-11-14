@@ -4,6 +4,7 @@ import { getTagPas } from "../../api/cardMes";
 import UserCard from "../../components/UserCard/UserCard";
 import TagList from "../../components/TagsList/TagsList";
 import Card from "../../components/Card/Card";
+import ArchiveCard from "../../components/ArchiveCard/ArchiveCard";
 import "./TagPas.scss";
 const TagPas = () => {
   const [mesList, setMesList] = useState([]);
@@ -37,8 +38,11 @@ const TagPas = () => {
           })}
         </div>
       </div>
-      <UserCard></UserCard>
-      <TagList></TagList>
+      <div className="leftBox">
+        <UserCard></UserCard>
+        <TagList></TagList>
+        <ArchiveCard></ArchiveCard>
+      </div>
     </div>
   );
 };

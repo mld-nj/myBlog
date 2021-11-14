@@ -43,3 +43,7 @@ export const getPagniatePas = (page: number, pageSize: number) => {
     },
   });
 };
+//归档各个时间点统计
+export const getArchive = () => {
+  return request.get("/archive");
+};
