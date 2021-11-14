@@ -45,9 +45,7 @@ const Index = () => {
         <TagList></TagList>
         <ArchiveCard></ArchiveCard>
       </div>
-
       <Paginate></Paginate>
-      <TimeAxis></TimeAxis>
     </div>
   );
 };

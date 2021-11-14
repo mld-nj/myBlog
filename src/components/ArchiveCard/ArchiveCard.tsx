@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getArchive } from "../../api/cardMes";
 import "./ArchiveCard.scss";
 const ArchiveItem = (props: any) => {
   const date = props.date.slice(0, 7);
   return (
-    <div className="itemContainer">
+    <Link to={`/archive/${date}`} className="itemContainer">
       <div className="itemDate">{date}</div>
       <div className="itemCounts">{props.count}</div>
-    </div>
+    </Link>
   );
 };
 const ArchiveCard = () => {

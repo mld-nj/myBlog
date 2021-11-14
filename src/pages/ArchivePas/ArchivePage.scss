@@ -1,0 +1,40 @@
+.archivePageContainer {
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    margin-left: 240px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    background: #00fff0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #00fff0,
+      #0083fe
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #00fff0,
+      #0083fe
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0px 0px 10px #cccccc;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+    .icon {
+      width: 40px;
+      height: 40px;
+      background-image: url("../../assets/archive1.png");
+      background-size: 100%, 100%;
+    }
+    .content {
+      margin-left: 10px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+}
+.titleContainer:hover {
+  box-shadow: 0px 0px 50px #cccccc;
+}
