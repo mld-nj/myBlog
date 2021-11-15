@@ -5,7 +5,17 @@
   margin: 0 auto;
   padding: 45px;
 }
-
+.toHome {
+  position: fixed;
+  top: 20px;
+  right: 200px;
+  display: block;
+  // color: inherit;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../assets/home.png");
+  background-size: 100%, 100%;
+}
 @media (max-width: 767px) {
   .markdown-body {
     padding: 15px;

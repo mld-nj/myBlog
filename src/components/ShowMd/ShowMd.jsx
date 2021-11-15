@@ -1,4 +1,5 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getPassage } from "../../api/cardMes";
 import hljs from "highlight.js"; // 引入highlight.js库
 import "highlight.js/styles/github.css"; // 引入github风格的代码高亮样式
@@ -54,6 +55,7 @@ const ShowMd = (props) => {
         dangerouslySetInnerHTML={{ __html: htmlPas }}
         style={{ boxShadow: cardStyle }}
       ></div>
+      <Link to={"/"} className="toHome"></Link>
     </div>
   );
 };
