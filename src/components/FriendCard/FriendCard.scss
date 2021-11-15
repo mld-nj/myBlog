@@ -1,4 +1,4 @@
-.archiveContainer {
+.friendContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
     .icon {
       width: 20px;
       height: 20px;
-      background-image: url("../../assets/archive1.png");
+      background-image: url("../../assets/friend.png");
       background-size: 100%, 100%;
       margin-right: 10px;
       margin-left: 10px;
@@ -36,7 +36,7 @@
       font-size: 20px;
     }
   }
-  .archiveItemContainer {
+  .friendItemContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -49,8 +49,8 @@
       justify-content: space-between;
       color: white;
       font-size: 20px;
-      margin: 8px 0 8px 0;
-      padding: 5px 0 5px 0;
+      //   margin: 8px 0 8px 0;
+      //   padding: 5px 0 5px 0;
       border-radius: 5px;
       .itemDate {
         margin-left: 10px;
@@ -63,7 +63,7 @@
     }
   }
 }
-.archiveContainer:hover {
+.friendContainer:hover {
   box-shadow: 0px 0px 50px #cccccc;
 }
 .itemContainer:hover {

@@ -22,7 +22,7 @@ const ArchiveCard = () => {
     <div className="archiveContainer">
       <div className="title">
         <div className="icon"></div>
-        <div className="content">Archive</div>
+        <div className="content">Archives</div>
       </div>
       <div className="archiveItemContainer">
         {dateList.map((value: { date: string; count: number }) => {

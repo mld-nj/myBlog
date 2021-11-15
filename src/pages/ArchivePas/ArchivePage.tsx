@@ -5,6 +5,7 @@ import UserCard from "../../components/UserCard/UserCard";
 import TagList from "../../components/TagsList/TagsList";
 import TimeAxis from "../../components/TimeAxis/TimeAxis";
 import ArchiveCard from "../../components/ArchiveCard/ArchiveCard";
+import FriendCard from "../../components/FriendCard/FriendCard";
 import "./ArchivePage.scss";
 const ArchivePage = () => {
   const [mesList, setMesList] = useState([]);
@@ -28,6 +29,7 @@ const ArchivePage = () => {
         <UserCard></UserCard>
         <TagList></TagList>
         <ArchiveCard></ArchiveCard>
+        <FriendCard></FriendCard>
       </div>
     </div>
   );

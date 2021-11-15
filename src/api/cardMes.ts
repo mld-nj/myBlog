@@ -47,3 +47,6 @@ export const getPagniatePas = (page: number, pageSize: number) => {
 export const getArchive = () => {
   return request.get("/archive");
 };
+export const getFriens = () => {
+  return request.get("/friends");
+};

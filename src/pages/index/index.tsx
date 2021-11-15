@@ -3,7 +3,7 @@ import Card from "../../components/Card/Card";
 import UserCard from "../../components/UserCard/UserCard";
 import TagList from "../../components/TagsList/TagsList";
 import Paginate from "../../components/Paginate/Paginate";
-import TimeAxis from "../../components/TimeAxis/TimeAxis";
+import FriendCard from "../../components/FriendCard/FriendCard";
 import ArchiveCard from "../../components/ArchiveCard/ArchiveCard";
 import { useRecoilState } from "recoil";
 import { pageConfigStore } from "../../store/paginate";
@@ -44,6 +44,7 @@ const Index = () => {
         <UserCard></UserCard>
         <TagList></TagList>
         <ArchiveCard></ArchiveCard>
+        <FriendCard></FriendCard>
       </div>
       <Paginate></Paginate>
     </div>
